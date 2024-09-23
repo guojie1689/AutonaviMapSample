@@ -8,6 +8,8 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.amap.api.maps.MapView
 import com.amap.api.maps.model.MyLocationStyle
+import com.amap.api.maps.model.MyLocationStyle.*
+import com.amap.api.maps.model.MyLocationStyleCreator
 import java.security.Permissions
 
 class MainActivity : AppCompatActivity() {
@@ -56,9 +58,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showCurrentPoint() {
-        var myLocationStyle = MyLocationStyle()
+        var myLocationStyle=MyLocationStyle()
 
-        myLocationStyle.interval(2000)
+        myLocationStyle.myLocationType(LOCATION_TYPE_LOCATE)
 
         mapView.map.myLocationStyle = myLocationStyle
         mapView.map.isMyLocationEnabled = true
