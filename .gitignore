@@ -1,0 +1,34 @@
+# 编译生成的文件
+build/
+captures/
+
+# 本地配置文件
+*.iml
+.gradle/
+local.properties
+
+# Android Studio配置
+.idea/
+
+# 生成的apk文件
+*.apk
+
+# 临时备份文件
+*.bak
+
+# ProGuard文件
+proguard/
+
+# Log文件
+*.log
+
+# Android Studio自动生成的文件
+.navigation/
+
+# 收集的Gradle缓存
+.gradle/
+
+# 构建工具输出的文件
+build/
+
+.DS_Store
